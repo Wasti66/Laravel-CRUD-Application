@@ -80,9 +80,10 @@ class UserController extends Controller
         
         $user->delete();
         
-        return response()->json([
+        /* return response()->json([
             'message' => 'User deleted successfully', 
-        ]);
+        ]); */
+        return view('pages.AllUser');
         
     } catch (\Exception $e) { 
         return response()->json([

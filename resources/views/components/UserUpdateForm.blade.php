@@ -5,7 +5,7 @@
         <br>
         <form method="post" action="{{ route('UserUpdate', $user->id) }}">
              @csrf 
-            <fieldset>
+            <fieldset style="width:100%;">
                 <!-- name -->
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" value="{{ $user->name }}">
